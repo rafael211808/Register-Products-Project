@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table</title>
+    <link rel="stylesheet" href="styles/register-products.css">
+    <link rel="stylesheet" href="styles/products-table.css">
+  </head>
+  <body>
+    <h1>Product Registration Form</h1>
+    <main>
+      <form id="product-form">
+        <div>
+          <p>Product Code</p>
+          <input id="product-code" placeholder="Product Code">
+        </div>
+        <div>
+          <p>Product Brand</p>
+          <input id="product-brand" placeholder="Product Brand">
+        </div>
+        <div>
+          <p>Product Type</p>
+          <input id="product-type" placeholder="Product Type">
+        </div>
+        <div>
+          <p>Product Category</p>
+          <input id="product-category" placeholder="Product Category">
+        </div>
+        <div>
+          <p>Product Unit Price</p>
+          <input id="product-unit-price" placeholder="Product Unit Price">
+        </div>
+        <div>
+          <p>Product Cost</p>
+          <input id="product-cost" placeholder="Product Cost">
+        </div>
+        <div>
+          <p>Note</p>
+          <input id="product-note" placeholder="Note">
+        </div>
+        <div class="buttons-section js-buttons-section">
+          <button type="submit" class="blue-button">Submit</button>
+          <button class="orange-button js-clear-button">Clear</button>
+        </div>
+      </form>
+
+      <div class="confirmation-container hidden js-confirmation-container">
+        <p>Are you sure you want to clear the registered products?</p>
+        <div class="buttons-section">
+          <button class="blue-button js-yes-button">yes</button>
+          <button class="orange-button js-no-button">no</button>
+        </div>
+      </div>
+
+      <div class="product-table-container js-product-table-container hidden">
+        <h2 id="table-title">registered products (0)</h2>
+
+        <div class="table-scroll-box">
+          <table class="product-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Brand</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Cost</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody id="products-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="scripts/register-products.js"></script>
+    <script type="module" src="scripts/render-table.js"></script>
+  </body>
+</html>

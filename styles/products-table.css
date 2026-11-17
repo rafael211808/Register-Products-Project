@@ -1,0 +1,54 @@
+.product-table-container {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+}
+
+.table-scroll-box {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.hidden {
+  display: none;
+}
+
+.product-table-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: rgb(32, 32, 32);
+}
+
+.product-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px 8px;
+  text-align: left;
+  border: 1px solid rgb(200, 200, 200);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.product-table thead th {
+  background-color: rgb(196, 196, 196);
+  color: rgb(25, 25, 25);
+  border-bottom: 2px solid rgb(160, 160, 160);
+}
+
+.product-table tbody td:nth-child(odd) {
+  background-color: rgb(240, 240, 240);
+}
+
+.product-table tbody td:nth-child(even) {
+  background-color: rgb(216, 216, 216);
+}

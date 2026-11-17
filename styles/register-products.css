@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(32, 32, 32);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+form {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0 16px;
+}
+
+input {
+  margin: 8px 0;
+  width: 100%;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(96, 96, 96);
+  border-radius: 200px;
+  padding: 8px 16px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 1px 1px 2px rgb(192, 192, 192);
+  transition: background-color 0.15s;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: rgb(64, 64, 64);
+}
+
+input:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+input.valid-field {
+  background-color: rgb(220, 245, 220) !important;
+  border-color: rgb(40, 160, 40);
+}
+
+input.invalid-field {
+  background-color: rgb(255, 225, 225) !important;
+  border-color: rgb(220, 40, 40);
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  box-shadow: 0 0 10px rgb(160, 160, 160);
+}
+
+.blue-button {
+  background-color: rgb(25, 115, 166);
+}
+
+.blue-button:hover {
+  background-color: rgb(16, 98, 143);
+}
+
+.blue-button:active {
+  background-color: rgb(7, 81, 121);
+}
+
+.orange-button {
+  background-color: rgb(240, 115, 25);
+}
+
+.orange-button:hover {
+  background-color: rgb(217, 98, 16);
+}
+
+.orange-button:active {
+  background-color: rgb(195, 81, 7);
+}
+
+.hidden {
+  display: none;
+}
+
+.confirmation-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.confirmation-container p {
+  font-size: 16px;
+  margin: 8px;
+}
